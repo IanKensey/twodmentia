@@ -1,0 +1,131 @@
+#labels ReplicaIsland,MapEditor,.binfiles,rawbinary,tiled,Featured
+Replica Island Map Editing and Saving .bin files through *TILED*
+
+= Introduction =
+Download *version 0.5.0.* This is the version which is compatible with the plug-in:
+
+[http://www.google.com/url?sa=D&q=http://downloads.sourceforge.net/project/tiled/tiled-qt/0.5.0/tiled-qt-0.5.0-win32.zip&usg=AFQjCNFLEyiDb3n3Tq_oTBGpgihA0qeWhw Tiled v 0.5.0]
+
+Then download the plug-in for Tiled that allows it to export the RI format bin file: 
+
+[http://www.google.com/url?sa=D&q=http://www.google.com/url%3Fsa%3DD%26q%3Dhttp://replica-island-coding-community.googlegroups.com/web/RI-Tiled-Qt-Exporter.rar&usg=AFQjCNGT4nQzCv6lHw0MxZBLfNGGGeDhCg RI-Tiled-Qt-Exporter.rar] 
+
+==*Using Tiled*==
+
+Painting in Tiled is like using any other painting app. There are simple
+painting tools. The “palette” is in the lower right corner and is called
+Tileset. The canvas is called the map. The layers are shown on the upper
+right. Each layer has special attributes which you can access by right
+clicking on the layer and choosing “Layer Properties…”.
+
+==*Tilesets*==
+
+Tilesets from RI can be loaded into Tiled in order to paint with them.  Use
+_Map_; New Tileset… on the Tiled main menu to load in a png file from the
+res\drawable folder. There are images there which can be used as Tilesets.
+These are the images: collision.png, grass.png, island.png, sewage.png,
+cave.png, lab.png.
+
+In a raster image editing tool _i.e. GIMP or PHOTOSHOP_ you can edit the png files or make your own, that's what I did.
+Keep to the same file dimensions and keep your images fitting correctly
+in a grid of 32 x 32 pixels per tile. You can then just overwrite the
+original file or reconfigure the game to recognize and use your file. I just saved over them so I wouldn't have to rewrite that part of the code later. 
+
+
+==*The Layers*==
+
+Layers are the most important part of using TILED to draw your maps.
+Create 5 new layers and name them in order leading _down_:
+
+ * collision
+ * foreground
+ * midground
+ * objects
+ * hotspots
+
+Click the layer you want to paint on and then start using the corresponding image files for that layer. For example if you click the collision layer paint with the collision tileset.
+
+===*Properties of Layers*===
+
+Right click the layer after you've created it to edit it's properties.
+
+
+_collision_
+ * type           1
+
+_foreground_ 
+ * scrollSpeed           1
+ * tileIndex           3(adjustable more on this later)
+ * type           0
+
+_midground_
+ * scrollSpeed          .5(adjustable, I used 1 instead)
+ * tileIndex           3
+ * type           0
+
+_objects_ 
+ * type           2
+
+_hotspots_ 
+ * type           3
+
+
+==*TileIndex*==
+
+This will determine how the tiles that you've been throwing together will look in the game. Each map file i.e. collision.png, grass.png, island.png, sewage.png, cave.png, lab.png.
+
+They can be attribute to a number in the tileIndex property of each layer, these numbers are as follows:
+
+ * grass            0
+ * island           1
+ * sewer            2
+ * cave             3
+ * lab              4
+ * lighting         5
+ * tutorial         6
+
+So, if you want to use the lab.png as your tileIndex you would make the #4 instead of 3 (as seen above)
+
+The same can be applied to the background index, seen below.
+
+==*Background*==
+
+The Background is specified in Tiled by setting a map variable called
+backgroundIndex. Go to the _Map_ tab on the top of the program, then go to the subcategory _Map Properties_. Now you can add properties the same as layers, just add the property
+
+ * _backgroundIndex_           3(adjustable see below)
+
+The values for the different backgrounds are:
+
+ * sunset           0
+ * island           1
+ * sewer            2
+ * underground      3
+ * forest           4
+ * island2          5
+ * lab              6
+
+==*Save your map*==
+
+File; Save As… Tiled Map Files. This is the format that you can come back and edit later.
+
+==*Export as a Replica Island binary*==
+
+File ; Export As… and choose Replica Island Map File
+
+==*To test your created level*==
+
+First make a copy of the first level of RI.
+
+It is a .bin file with this filename: \res\raw\level_0_1_sewer.bin
+
+You may have to make a copy outside of the folder it’s in otherwise Eclipse
+will give warning messages because it tries to interpret the file.
+
+Then overwrite level_0_1_sewer.bin with the exported bin file from the Tiled
+application.
+
+Rebuild in Eclipse and Run it on your android phone. 
+
+
+===*Thanks to those at Replica Island Coding Community who helped me understand this editor, I'm just trying to make it more accessible with things that confused me originally.*===
