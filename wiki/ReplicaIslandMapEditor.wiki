@@ -1,4 +1,4 @@
-#labels ReplicaIsland,MapEditor,.binfiles,rawbinary,tiled,Featured
+#labels ReplicaIsland,MapLevelEditor,.binfiles,rawbinary,tiled,Featured
 Replica Island Map Editing and Saving .bin files through *TILED*
 
 = Introduction =
