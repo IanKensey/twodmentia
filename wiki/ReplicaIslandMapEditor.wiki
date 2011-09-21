@@ -43,7 +43,7 @@ Create 5 new layers and name them in order leading _down_:
  * objects
  * hotspots
 
-Click the layer you want to paint on and then start using the corresponding image files for that layer. For example if you click the collision layer paint with the collision tileset. For painting with Object and Hotspot layers, Chris has released some .png files that were very helpful in my development, [http://groups.google.com/group/replica-island-coding-community/attach/6977b5399f43c0c6/object-tileset.png?part=2 Object Layer] and [http://groups.google.com/group/replica-island-coding-community/attach/6977b5399f43c0c6/hot-spot-tileset.png?part=3 Hotspot Layer]
+Click the layer you want to paint on and then start using the corresponding image files for that layer. For example if you click the collision layer paint with the collision tileset. For painting with Object and Hotspot layers, Chris has released some .png files that were very helpful in my development, [http://groups.google.com/group/replica-island-coding-community/attach/6977b5399f43c0c6/object-tileset.png?part=2 Object Tileset] and [http://groups.google.com/group/replica-island-coding-community/attach/6977b5399f43c0c6/hot-spot-tileset.png?part=3 Hotspot Tileset]
 
 ===*Properties of Layers*===
 
