@@ -2,13 +2,13 @@
 Replica Island Map Editing and Saving .bin files through *TILED*
 
 = Introduction =
-Download *version 0.5.0.* This is the version which is compatible with the plug-in:
+Download *TILED* This version has the plug-in already installed:
 
-[http://www.google.com/url?sa=D&q=http://downloads.sourceforge.net/project/tiled/tiled-qt/0.5.0/tiled-qt-0.5.0-win32.zip&usg=AFQjCNFLEyiDb3n3Tq_oTBGpgihA0qeWhw Tiled v 0.5.0]
+[https://docs.google.com/leaf?id=0B0GnkjGeZLkPMjY0OTk3YWQtZTA0NC00ODQ5LWJlYjMtNDk1OTBjMTBiNWE1&sort=name&layout=list&num=50&pli=1 Tiled]
 
-Then download the plug-in for Tiled that allows it to export the RI format bin file: 
+You will need *RarZilla* in order to open the file, you can find it through the link below or just google it:
 
-[http://www.google.com/url?sa=D&q=http://www.google.com/url%3Fsa%3DD%26q%3Dhttp://replica-island-coding-community.googlegroups.com/web/RI-Tiled-Qt-Exporter.rar&usg=AFQjCNGT4nQzCv6lHw0MxZBLfNGGGeDhCg RI-Tiled-Qt-Exporter.rar] 
+[http://download.cnet.com/RarZilla-Free-Unrar/3000-2250_4-10647724.html RarZilla]
 
 ==*Using Tiled*==
 
